@@ -1,4 +1,6 @@
 // Sign Up Function
+import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+import {signInWithEmailAndPassword } from "firebase/auth";
 function signUp() {
   const email = document.getElementById("email").value;
   const password = document.getElementById("password").value;
