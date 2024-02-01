@@ -1,4 +1,6 @@
 // Replace with your Firebase Config
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.2/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.7.2/firebase-analytics.js";
 const firebaseConfig = {
     apiKey: "AIzaSyDsj4I_h7jTgsfIvakEbY3ojgMnDz4NYQY",
     authDomain: "krishna1-48406.firebaseapp.com",
