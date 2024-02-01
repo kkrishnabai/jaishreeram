@@ -30,7 +30,7 @@ function login() {
 
 // Sign Out Function
 function signOut() {
-  firebase.auth().signOut()
+  app.auth().signOut()
     .then(() => {
       console.log("User signed out");
     })
