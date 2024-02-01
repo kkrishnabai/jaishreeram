@@ -3,7 +3,7 @@ function signUp() {
   const email = document.getElementById("email").value;
   const password = document.getElementById("password").value;
 
-  app.auth().createUserWithEmailAndPassword(email, password)
+  firebase.auth().createUserWithEmailAndPassword(email, password)
     .then((userCredential) => {
       const user = userCredential.user;
       console.log("User signed up:", user.email);
@@ -18,7 +18,7 @@ function login() {
   const email = document.getElementById("loginEmail").value;
   const password = document.getElementById("loginPassword").value;
 
-  app.auth().signInWithEmailAndPassword(email, password)
+  firebase.auth().signInWithEmailAndPassword(email, password)
     .then((userCredential) => {
       const user = userCredential.user;
       console.log("User logged in:", user.email);
@@ -30,7 +30,7 @@ function login() {
 
 // Sign Out Function
 function signOut() {
-  app.auth().signOut()
+  firebase.auth().signOut()
     .then(() => {
       console.log("User signed out");
     })
